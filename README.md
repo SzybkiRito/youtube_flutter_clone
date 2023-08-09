@@ -1,6 +1,7 @@
 # Flutter youtube clone
 
-This is clone of youtube application made in flutter, this is not fully functional due to youtube
+This is clone of youtube application made in flutter, this is not fully functional due to youtube. 
+This project is still in progress.
 
 # Packages
 
