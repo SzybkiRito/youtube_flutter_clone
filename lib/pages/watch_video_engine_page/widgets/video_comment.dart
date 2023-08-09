@@ -36,11 +36,15 @@ class VideoComment extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(
-                      '@$author',
-                      style: TextStyle(
-                        color: Colors.white.withOpacity(0.6),
-                        fontSize: 12,
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.5,
+                      child: Text(
+                        '@$author',
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.6),
+                          fontSize: 12,
+                        ),
                       ),
                     ),
                     const SizedBox(

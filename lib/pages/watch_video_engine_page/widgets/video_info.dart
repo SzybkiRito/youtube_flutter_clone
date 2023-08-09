@@ -18,12 +18,27 @@ class VideoInfo extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            videoTitle,
-            style: Theme.of(context).textTheme.labelLarge,
-          ),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                videoTitle,
+                style: Theme.of(context).textTheme.labelLarge,
+              ),
+            ),
+            const Spacer(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {},
+                child: const Icon(
+                  Icons.arrow_drop_down,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8.0, right: 8.0),

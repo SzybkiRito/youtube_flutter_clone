@@ -4,7 +4,11 @@ import 'package:youtube_clone/custom_widgets/bars/navigation_bar.dart';
 import 'package:youtube_clone/pages/home_page/home_page.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+  const MainPage({
+    super.key,
+    this.defaultIndex,
+  });
+  final int? defaultIndex;
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -25,7 +29,7 @@ class _MainPageState extends State<MainPage> {
           child: TopNavigationBar(),
         ),
       ),
-      body: listOfPages[0],
+      body: listOfPages[widget.defaultIndex ?? 0],
     );
   }
 }

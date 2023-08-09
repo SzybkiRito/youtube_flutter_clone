@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:youtube_clone/classess/Colors.dart';
+import 'package:youtube_clone/pages/search_engine_page/search_engine_page.dart';
 
 class TopNavigationBar extends StatelessWidget {
   const TopNavigationBar({super.key});
@@ -27,7 +29,9 @@ class TopNavigationBar extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(() => const SearchEnginePage(), transition: Transition.zoom);
+            },
             icon: const Icon(
               Icons.search,
               color: Colors.white,

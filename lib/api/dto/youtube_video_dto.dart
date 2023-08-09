@@ -11,7 +11,7 @@ class YoutubeVideoDto {
   final String miniatureImageSrc;
   final String channelImageSrc;
   final String channelId;
-  final String numberOfLikes;
+  final String? numberOfLikes;
 
   YoutubeVideoDto({
     required this.id,
@@ -24,7 +24,7 @@ class YoutubeVideoDto {
     required this.miniatureImageSrc,
     required this.channelImageSrc,
     required this.channelId,
-    required this.numberOfLikes,
+    this.numberOfLikes,
   });
 
   factory YoutubeVideoDto.fromJson(Map<String, dynamic> json) {
@@ -45,7 +45,7 @@ class YoutubeVideoDto {
       miniatureImageSrc: json['snippet']['thumbnails']['high']['url'],
       channelImageSrc: json['snippet']['thumbnails']['high']['url'],
       channelId: json['snippet']['channelId'],
-      numberOfLikes: json['statistics']['likeCount'],
+      numberOfLikes: json['statistics']['likeCount'] ?? '',
     );
   }
 }
