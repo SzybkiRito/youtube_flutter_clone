@@ -37,6 +37,7 @@ Build & Run project
 - Add functionality to likes button and comments button
 - Add Search Bar
 - Find different aproach to show youtube videos than flutter_webview
+- Add flutter localizations to the project
 
 ## License
 
