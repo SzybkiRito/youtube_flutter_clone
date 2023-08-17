@@ -17,11 +17,13 @@ This project is still in progress.
 | shared_preferences    | 2.2.0   |
 | get                   | NEWEST  |
 | get_it                | 7.6.0   |
+| firebase_core         | 2.15.1  |
+| google_sign_in        | 6.1.4   |
+| firebase_auth         | 4.7.3   |
 
 ## Installation
 
 Before you start work on this project you will need to create .env file in root directory.
-
 .env
 
 ```
@@ -29,18 +31,20 @@ GOOGLE_API_KEY=
 ```
 
 Build & Run project
+Before you try to run this project you need to configure firebase on your PC.
 
 ```bash
     cd youtube_clone
     flutter pub get
+    flutterfire configure
     flutter run
 ```
 
 ## Roadmap
 
-- Add posibility to login using Youtube OAUTH
+- ~~Add posibility to login using Youtube OAUTH~~
 - Add functionality to likes button and comments button
-- Add Search Bar
+- ~~Add Search Bar~~
 - Find different aproach to show youtube videos than flutter_webview
 - Add flutter localizations to the project
 
